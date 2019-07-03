@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<script src="lib/angular.min.js"></script>
+<body>
+
+<div ng-app="" ng-init="names=[
+{name:'sravya',country:'india'},
+{name:'Hegde',country:'england'},
+{name:'Kai',country:'bangkok'}]">
+
+<p>Looping with objects:</p>
+<ul>
+  <li ng-repeat="x in names">
+  {{ x.name + ', ' + x.country }}</li>
+  <template>"made by a directive"</template>
+</ul>
+
+</div>
+
+</body>
+</html>
